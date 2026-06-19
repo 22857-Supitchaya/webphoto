@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Thailand - เที่ยวเมืองไทย ไม่ไปไม่รู้</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header Style */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Container & Grid Style */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Style */
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-image-box {
+            width: 100%;
+            height: 250px;
+            background-color: #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ข้อความแจ้งเตือนกรณีลืมใส่รูป */
+        .img-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #718096;
+            font-size: 0.9rem;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #1a202c;
+        }
+
+        .card-description {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #1a202c;
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Amazing Thailand</h1>
+        <p>เปิดประสบการณ์การเดินทาง สัมผัสเสน่ห์เมืองไทยที่คุณอาจยังไม่เคยเจอ</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+
+            <!-- สถานที่ที่ 1 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <!-- 💡 ใส่ชื่อไฟล์รูปภาพของคุณในช่อง src ด้านล่างนี้ -->
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="วัดพระแก้ว">
+                    <div class="https://img.kapook.com/u/2023/sutasinee/04/WatPhraKaew11.jpg">📸 (กรุณาใส่รูปภาพ วัดพระแก้ว)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">กรุงเทพมหานคร</span>
+                    <h2 class="card-title">วัดพระศรีรัตนศาสดาราม (วัดพระแก้ว)</h2>
+                    <p class="card-description">วัดคู่บ้านคู่เมืองของประเทศไทย ตั้งอยู่ในพระบรมมหาราชวัง โดดเด่นด้วยสถาปัตยกรรมไทยอันวิจิตรตระการตา และเป็นที่ประดิษฐานพระพุทธมหามณีรัตนปฏิมากร</p>
+                </div>
+            </div>
+
+            <!-- สถานที่ที่ 2 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="ดอยอินทนนท์">
+                    <div class="https://media-cdn.tripadvisor.com/media/photo-s/09/59/03/ec/caption.jpg">📸 (กรุณาใส่รูปภาพ ดอยอินทนนท์)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">เชียงใหม่</span>
+                    <h2 class="card-title">อุทยานแห่งชาติดอยอินทนนท์</h2>
+                    <p class="card-description">ยอดเขาที่สูงที่สุดในประเทศไทย สัมผัสอากาศหนาวเย็นตลอดทั้งปี เดินชมเส้นทางศึกษาธรรมชาติกิ่วแม่ปาน และชมทะเลหมอกยามเช้าที่สวยงาม</p>
+                </div>
+            </div>
+
+            <!-- สถานที่ที่ 3 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="แหลมพรหมเทพ">
+                    <div class="https://ภาพวิว.com/wp-content/uploads/2018/09/JPHU-16.jpg">📸 (กรุณาใส่รูปภาพ แหลมพรหมเทพ)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">ภูเก็ต</span>
+                    <h2 class="card-title">แหลมพรหมเทพ</h2>
+                    <p class="card-description">จุดชมวิวพระอาทิตย์ตกดินที่สวยงามและขึ้นชื่อที่สุดในประเทศไทย ตั้งอยู่ใต้สุดของเกาะภูเก็ต มีทัศนียภาพของต้นตาลและทะเลอันดามันที่กว้างไกล</p>
+                </div>
+            </div>
+
+            <!-- สถานที่ที่ 4 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="อุทยานประวัติศาสตร์สุโขทัย">
+                    <div class="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT640043/3.jpeg">📸 (กรุณาใส่รูปภาพ สุโขทัย)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">สุโขทัย</span>
+                    <h2 class="card-title">อุทยานประวัติศาสตร์สุโขทัย</h2>
+                    <p class="card-description">แหล่งมรดกโลกทางวัฒนธรรม ย้อนรอยอดีตราชธานีเก่าแก่ ชมโบราณสถาน วัดเก่า และพระพุทธรูปโบราณขนาดใหญ่ที่มีเอกลักษณ์เฉพาะตัว</p>
+                </div>
+            </div>
+
+            <!-- สถานที่ที่ 5 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="อ่าวมาหยา">
+                    <div class="https://trip-attractive.com/wp-content/uploads/2017/04/maya-bay-01.jpg">📸 (กรุณาใส่รูปภาพ อ่าวมาหยา)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">กระบี่</span>
+                    <h2 class="card-title">อ่าวมาหยา (เกาะพีพีเล)</h2>
+                    <p class="card-description">สวรรค์แห่งทะเลอันดามัน อ่าวที่โอบล้อมด้วยภูเขาหินปูน มีหาดทรายขาวละเอียดเหมือนผงแป้ง และน้ำทะเลสีฟ้าใสราวกับกระจก</p>
+                </div>
+            </div>
+
+            <!-- สถานที่ที่ 6 -->
+            <div class="card">
+                <div class="card-image-box">
+                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="เกาะล้าน">
+                    <div class="https://copacabanagroup.com/wp-content/uploads/2025/12/shutterstock_2203668519.jpg">📸 (กรุณาใส่รูปภาพ เกาะล้าน)</div>
+                </div>
+                <div class="card-content">
+                    <span class="tag">ชลบุรี</span>
+                    <h2 class="card-title">เกาะล้าน (พัทยา)</h2>
+                    <p class="card-description">สถานที่พักผ่อนยอดฮิตใกล้กรุงเทพฯ เดินทางง่าย มีหาดทรายสวยงามหลายแห่ง เช่น หาดตาแหวน หาดนวล เหมาะสำหรับกิจกรรมทางน้ำและพักผ่อนในวันหยุด</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์แนะนำสถานที่ท่องเที่ยวไทย | รูปภาพโดยผู้ใช้งานเอง</p>
+    </footer>
+
+</body>
+</html>
