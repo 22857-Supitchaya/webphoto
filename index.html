@@ -87,6 +87,7 @@
             font-size: 0.9rem;
             text-align: center;
             pointer-events: none;
+            display: none; /* ซ่อนข้อความแจ้งเตือนเนื่องจากใส่รูปภาพแล้ว */
         }
 
         .card-content {
@@ -113,7 +114,7 @@
         .card-description {
             color: #4a5568;
             font-size: 0.95rem;
-            line-line-height: 1.6;
+            line-height: 1.6;
         }
 
         /* Footer */
@@ -139,9 +140,8 @@
             <!-- สถานที่ที่ 1 -->
             <div class="card">
                 <div class="card-image-box">
-                    <!-- 💡 ใส่ชื่อไฟล์รูปภาพของคุณในช่อง src ด้านล่างนี้ -->
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="วัดพระแก้ว">
-                    <div class="https://img.kapook.com/u/2023/sutasinee/04/WatPhraKaew11.jpg">📸 (กรุณาใส่รูปภาพ วัดพระแก้ว)</div>
+                    <img src="https://img.kapook.com/u/2023/sutasinee/04/WatPhraKaew11.jpg" alt="วัดพระแก้ว">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ วัดพระแก้ว)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">กรุงเทพมหานคร</span>
@@ -153,8 +153,8 @@
             <!-- สถานที่ที่ 2 -->
             <div class="card">
                 <div class="card-image-box">
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="ดอยอินทนนท์">
-                    <div class="https://media-cdn.tripadvisor.com/media/photo-s/09/59/03/ec/caption.jpg">📸 (กรุณาใส่รูปภาพ ดอยอินทนนท์)</div>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/59/03/ec/caption.jpg" alt="ดอยอินทนนท์">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ ดอยอินทนนท์)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">เชียงใหม่</span>
@@ -166,8 +166,8 @@
             <!-- สถานที่ที่ 3 -->
             <div class="card">
                 <div class="card-image-box">
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="แหลมพรหมเทพ">
-                    <div class="https://ภาพวิว.com/wp-content/uploads/2018/09/JPHU-16.jpg">📸 (กรุณาใส่รูปภาพ แหลมพรหมเทพ)</div>
+                    <img src="https://ภาพวิว.com/wp-content/uploads/2018/09/JPHU-16.jpg" alt="แหลมพรหมเทพ">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ แหลมพรหมเทพ)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">ภูเก็ต</span>
@@ -179,8 +179,8 @@
             <!-- สถานที่ที่ 4 -->
             <div class="card">
                 <div class="card-image-box">
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="อุทยานประวัติศาสตร์สุโขทัย">
-                    <div class="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT640043/3.jpeg">📸 (กรุณาใส่รูปภาพ สุโขทัย)</div>
+                    <img src="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT640043/3.jpeg" alt="อุทยานประวัติศาสตร์สุโขทัย">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ สุโขทัย)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">สุโขทัย</span>
@@ -192,8 +192,8 @@
             <!-- สถานที่ที่ 5 -->
             <div class="card">
                 <div class="card-image-box">
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="อ่าวมาหยา">
-                    <div class="https://trip-attractive.com/wp-content/uploads/2017/04/maya-bay-01.jpg">📸 (กรุณาใส่รูปภาพ อ่าวมาหยา)</div>
+                    <img src="https://trip-attractive.com/wp-content/uploads/2017/04/maya-bay-01.jpg" alt="อ่าวมาหยา">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ อ่าวมาหยา)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">กระบี่</span>
@@ -205,8 +205,8 @@
             <!-- สถานที่ที่ 6 -->
             <div class="card">
                 <div class="card-image-box">
-                    <img src="ใส่ชื่อไฟล์รูปภาพของคุณตรงนี้.jpg" alt="เกาะล้าน">
-                    <div class="https://copacabanagroup.com/wp-content/uploads/2025/12/shutterstock_2203668519.jpg">📸 (กรุณาใส่รูปภาพ เกาะล้าน)</div>
+                    <img src="https://copacabanagroup.com/wp-content/uploads/2025/12/shutterstock_2203668519.jpg" alt="เกาะล้าน">
+                    <div class="img-placeholder"> (กรุณาใส่รูปภาพ เกาะล้าน)</div>
                 </div>
                 <div class="card-content">
                     <span class="tag">ชลบุรี</span>
